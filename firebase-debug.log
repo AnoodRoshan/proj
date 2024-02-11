@@ -1,0 +1,39 @@
+[debug] [2024-02-11T08:11:43.639Z] ----------------------------------------------------------------------
+[debug] [2024-02-11T08:11:43.644Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-11T08:11:43.645Z] CLI Version:   13.2.1
+[debug] [2024-02-11T08:11:43.646Z] Platform:      win32
+[debug] [2024-02-11T08:11:43.646Z] Node Version:  v21.6.1
+[debug] [2024-02-11T08:11:43.646Z] Time:          Sun Feb 11 2024 13:41:43 GMT+0530 (India Standard Time)
+[debug] [2024-02-11T08:11:43.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-11T08:11:43.800Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-11T08:11:43.801Z] > authorizing via signed-in user (anoodroshan@gmail.com)
+[debug] [2024-02-11T08:11:43.801Z] [iam] checking project online-a54b0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-11T08:11:43.807Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-a54b0:testIamPermissions [none]
+[debug] [2024-02-11T08:11:43.807Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-a54b0:testIamPermissions x-goog-quota-user=projects/online-a54b0
+[debug] [2024-02-11T08:11:43.808Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-a54b0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-11T08:11:45.599Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-a54b0:testIamPermissions 200
+[debug] [2024-02-11T08:11:45.599Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/online-a54b0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-11T08:11:45.601Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/online-a54b0 [none]
+[debug] [2024-02-11T08:11:46.315Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/online-a54b0 200
+[debug] [2024-02-11T08:11:46.316Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/online-a54b0 {"projectId":"online-a54b0","projectNumber":"705841170860","displayName":"online","name":"projects/online-a54b0","resources":{"hostingSite":"online-a54b0"},"state":"ACTIVE","etag":"1_a33369db-ddeb-44c3-bcab-6baf85cc46d4"}
+[info] 
+[info] === Deploying to 'online-a54b0'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-02-11T08:11:46.328Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-a54b0/versions [none]
+[debug] [2024-02-11T08:11:46.329Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-a54b0/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-02-11T08:11:47.619Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-a54b0/versions 200
+[debug] [2024-02-11T08:11:47.619Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/online-a54b0/versions {"name":"projects/705841170860/sites/online-a54b0/versions/cd6c73560e90f26f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[online-a54b0]: beginning deploy... 
+[debug] [2024-02-11T08:14:06.580Z] Error: EPERM: operation not permitted, scandir 'C:\Users\lenovo\AppData\Local\Application Data'
+    at Object.readdirSync (node:fs:1509:26)
+    at GlobSync._readdir (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)

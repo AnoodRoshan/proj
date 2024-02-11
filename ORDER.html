@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GOcard</title>
+    <link rel="stylesheet" type="text/css" href="ORDER.CSS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GOcard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/log.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ORDER.html">ORDER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+       <!--ORDER--> 
+      <section>
+        <div class="container">
+          <div class="title">
+              <h2>Product Order Form</h2>
+          </div>
+        <div class="d-flex">
+          <form action="" method="">
+            <label>
+              <span class="fname">First Name <span class="required">*</span></span>
+              <input type="text" name="fname">
+            </label>
+            <label>
+              <span class="lname">Last Name <span class="required">*</span></span>
+              <input type="text" name="lname">
+            </label>
+            <label>
+              <span>Company Name (Optional)</span>
+              <input type="text" name="cn">
+            </label>
+            <label>
+              <span>Country <span class="required">*</span></span>
+              <select name="selection">
+                <option value="select">Select a country...</option>
+                <option value="IND">INDIA</option>
+                <option value="AUS">ÅUSTRALIA</option>
+                
+              </select>
+            </label>
+            <label>
+              <span>Street Address <span class="required">*</span></span>
+              <input type="text" name="houseadd" placeholder="House number and street name" required>
+            </label>
+            <label>
+              <span>&nbsp;</span>
+              <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+            </label>
+            <label>
+              <span>Town / City <span class="required">*</span></span>
+              <input type="text" name="city"> 
+            </label>
+            <label>
+              <span>State / County <span class="required">*</span></span>
+              <input type="text" name="city"> 
+            </label>
+            <label>
+              <span>Postcode / ZIP <span class="required">*</span></span>
+              <input type="text" name="city"> 
+            </label>
+            <label>
+              <span>Phone <span class="required">*</span></span>
+              <input type="tel" name="city"> 
+            </label>
+            <label>
+              <span>Email Address <span class="required">*</span></span>
+              <input type="email" name="city"> 
+            </label>
+          </form>
+          <div class="Yorder">
+            <table>
+              <tr>
+                <th colspan="2">Your order</th>
+              </tr>
+              <tr>
+                <td>Product Name x 2(Qty)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Subtotal</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>Free shipping</td>
+              </tr>
+            </table><br>
+            <div>
+              <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+            </div>
+            <p>
+                Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+            </p>
+            <div>
+              <input type="radio" name="dbt" value="cd"> Cash on Delivery
+            </div>
+            <div>
+              <input type="radio" name="dbt" value="cd"> Paypal <span>
+              <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+              </span>
+            </div>
+            <button type="button">Place Order</button>
+          </div><!-- Yorder -->
+         </div>
+        </div>
+     </section>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
